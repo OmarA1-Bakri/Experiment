@@ -88,7 +88,7 @@ jobs:
         "
 
     - name: Download baseline performance data
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: baseline-performance
         path: baseline/
@@ -502,7 +502,7 @@ jobs:
     
     steps:
     - name: Download all performance artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         path: artifacts/
 
