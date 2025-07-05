@@ -1,6 +1,7 @@
 import { apiClient } from './client';
 
 import type { Policy } from '@/types/api';
+import type { UnknownRecord } from '@/types/common';
 
 export interface GeneratePolicyRequest {
   framework_id: string;
@@ -126,7 +127,7 @@ class PolicyService {
     }>;
   }> {
     const params = frameworkId ? { framework_id: frameworkId } : undefined;
-    const response = await apiClient.get<any>('/policies/templates', { params });
+    const response = await apiClient.get<UnknownRecord>('/policies/templates', { params });
     return response.data;
   }
 
@@ -151,7 +152,7 @@ class PolicyService {
       changes: string[];
     }>;
   }> {
-    const response = await apiClient.get<any>(`/policies/${id}/versions`);
+    const response = await apiClient.get<UnknownRecord>(`/policies/${id}/versions`);
     return response.data;
   }
 }

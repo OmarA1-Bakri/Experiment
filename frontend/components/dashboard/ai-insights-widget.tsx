@@ -1,6 +1,5 @@
 "use client"
 
-import type React from "react"
 
 import {
   Brain,
@@ -23,6 +22,7 @@ import { dashboardService } from "@/lib/api/dashboard.service"
 import { cn } from "@/lib/utils"
 
 import type { DashboardInsight } from "@/lib/api/dashboard.service"
+import type React from "react"
 
 interface AIInsightsWidgetProps {
   insights: DashboardInsight[]

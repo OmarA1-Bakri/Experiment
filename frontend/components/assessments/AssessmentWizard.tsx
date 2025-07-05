@@ -1,6 +1,5 @@
 "use client";
 
-import type React from "react"
 
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -32,6 +31,8 @@ import { AssessmentNavigation } from "./AssessmentNavigation";
 import { FollowUpQuestion } from "./FollowUpQuestion";
 import { ProgressTracker } from "./ProgressTracker";
 import { QuestionRenderer } from "./QuestionRenderer";
+
+import type React from "react"
 
 interface AssessmentWizardProps {
   framework: AssessmentFramework;

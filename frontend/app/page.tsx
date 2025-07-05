@@ -1,6 +1,5 @@
 "use client";
 
-import type React from "react"
 
 import { motion } from "framer-motion";
 import {
@@ -23,6 +22,8 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useAuthStore } from "@/lib/stores/auth.store";
 import { cn } from "@/lib/utils";
+
+import type React from "react"
 
 
 // Benefit Card Component
