@@ -49,7 +49,7 @@ jobs:
           cmd_options: "-a"
 
       - name: Upload ZAP results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: zap-results
@@ -206,7 +206,7 @@ jobs:
           EOF
 
       - name: Upload security report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: security-report
           path: security-report.md

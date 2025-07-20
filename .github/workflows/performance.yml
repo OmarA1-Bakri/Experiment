@@ -47,7 +47,7 @@ jobs:
           uploadArtifacts: true
 
       - name: Upload Lighthouse results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: lighthouse-results
           path: |
@@ -92,7 +92,7 @@ jobs:
           node measure-web-vitals.js
 
       - name: Upload Web Vitals
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: web-vitals
           path: web-vitals.json
@@ -126,7 +126,7 @@ jobs:
           ANALYZE=true pnpm build
 
       - name: Upload bundle analysis
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bundle-analysis
           path: |

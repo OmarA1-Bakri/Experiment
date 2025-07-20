@@ -262,7 +262,7 @@ jobs:
         "
 
     - name: Upload security scan results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: security-scan-results
@@ -352,7 +352,7 @@ jobs:
         "
 
     - name: Upload secrets scan results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: secrets-scan-results
@@ -431,7 +431,7 @@ jobs:
         "
 
     - name: Upload Docker security scan results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: docker-security-results
@@ -500,7 +500,7 @@ jobs:
           --cov-report=xml:security-coverage.xml
 
     - name: Upload security test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: security-test-results
@@ -644,7 +644,7 @@ jobs:
         "
 
     - name: Upload comprehensive security report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: comprehensive-security-report
         path: comprehensive_security_report.json
